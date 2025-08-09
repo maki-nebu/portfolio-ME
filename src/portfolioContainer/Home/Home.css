@@ -1,0 +1,32 @@
+.home-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 0vh !important;
+    min-height: 120px;
+    background-color: fff6f0;
+    color: black;
+}
+.home-container .profile-options{
+    margin-top: 70px;
+}
+.home-container .profile-details-name{
+    color: aliceblue;
+font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.home-container .colz-icon .i{
+    padding-left:200px ;
+    size: 100px;
+}
+.home-container .highlighted-tex{
+    color: burlywood;
+}
+.home-container .primary-text{
+    color: rgb(12, 15, 36);
+}
+.home-container {
+  background-color: inherit;
+  color: inherit;
+}

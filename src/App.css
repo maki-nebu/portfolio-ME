@@ -1,0 +1,89 @@
+:root{
+  --light-blue : #04C3FF;
+  --light-blue-shadow:  rgb(69 211 255 / 27%);
+  --sea-green: #0ABEAD;
+  --sea-green-dark: #0CBFAE;
+  --sea-green-extra-dark: #09BEAD;
+  --sea-green-shadow: rgba(11, 190, 173,0.4);
+  --header-hamburger-background : rgba(11, 190, 173,0.8);
+  --orange: #F57F17;
+  --dark-orange: #FF5823;
+  --orange-shadow: rgba(245, 127, 23,0.2);
+  --white: #ffffff;
+  --black: #333333;
+  --disabled-btn: #09bead7a;
+  --error-message:  #e44f4fd1;
+  --toast-error: #e44f4ffa;
+  --toast-shadow:  #9c9c9ce3;
+  --toast-success: #0CBFAE;
+  --loader-color: #0CBFAE
+}
+/* Theme Colors */
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --link-color: #0077cc;
+  --button-bg: #f0f0f0;
+  --button-text: #1a1a1a;
+  --nav-bg: #eaeaea;
+  --card-bg: #ffffff;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --link-color: #66aaff;
+  --button-bg: #2a2a2a;
+  --button-text: #f5f5f5;
+  --nav-bg: #1e1e1e;
+  --card-bg: #1b1b1b;
+}
+
+/* Apply global theme styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+}
+
+/* Buttons */
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Navbar */
+nav {
+  background-color: var(--nav-bg);
+  padding: 10px 20px;
+}
+
+/* Cards / Sections */
+.card, .section {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+
