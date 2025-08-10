@@ -1,41 +1,37 @@
+/* NAVBAR CONTAINER */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(47, 44, 60);
-    padding: 20px 60px;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-  
-  .logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #facc15;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-  }
-  
-  .nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links li a:hover {
-    color: #facc15;
-  }
-  .nav-links li a {
-  font-family: 'italics';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(47, 44, 60);
+  padding: 20px 60px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* LOGO */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #facc15;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+/* LINKS STYLE */
+.nav-links li a {
+  font-family: sans-serif; /* safer fallback font */
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
@@ -44,9 +40,10 @@
   position: relative;
   padding: 5px 10px;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-/* Hover Effects */
+/* Hover underline effect */
 .nav-links li a::after {
   content: '';
   position: absolute;
@@ -65,4 +62,34 @@
 
 .nav-links li a:hover::after {
   width: 100%;
+}
+
+/* MENU TOGGLE ICON (HIDDEN ON DESKTOP) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgb(47, 44, 60);
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
 }
